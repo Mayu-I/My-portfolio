@@ -49,7 +49,7 @@ const Header = () => {
       </div>
       <div className="header__desc">
         <h2>Hi I'm <span>MAYU</span></h2>
-        <p>a front-end web developer based in Vancouver</p>
+        <p>a front-end web developer based in Vacouver</p>
       </div>
     </header>
   )

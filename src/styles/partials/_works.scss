@@ -1,4 +1,8 @@
 .works{
+    margin-top: 70px;
+    h2{
+        text-align: center;
+    }
     &__list{
         margin-top: 20px;
     }
@@ -39,5 +43,17 @@
         margin-top: 20px;
         margin-bottom: 10px;
         display: block;
+    }
+    &__more{
+        text-align: center;
+        margin-top: 20px;
+        a{
+            padding: 6px 10px 7px;
+            color: #fff;
+            background-color: $black;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
     }
 }

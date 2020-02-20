@@ -9,7 +9,7 @@ import git from '../../images/icon_git.png'
 const Footer = () => (
     <footer className="footer">
         <div className="footer__wrapper">
-            <p>Follow ME!</p>
+            <p className="footer__follow">↓ Follow Me ↓</p>
             <nav className="footer__nav">
                 <ul className="footer__navList">
                     <li className="footer__navItem--forrow"><a href="https://www.linkedin.com/in/mayu-imanaka-19a306194/" target="_blank" rel="noopener noreferrer"><img
