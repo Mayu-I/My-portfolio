@@ -23,12 +23,11 @@ const Header = () => {
 
   return (
     <header>
-      <div className="contentWrapper">
-        <div className="header__wrapper">
-          <div className="header__logo">
-            <Link to="/"><Img fluid={data.logoImage.childImageSharp.fluid} /></Link>
-          </div>
-          {/* <Anime
+      <div className="header__wrapper">
+        <div className="header__logo">
+          <Link to="/"><Img fluid={data.logoImage.childImageSharp.fluid} /></Link>
+        </div>
+        {/* <Anime
             initial={[
               {
                 targets: '.ml16 .letter',
@@ -39,19 +38,18 @@ const Header = () => {
               }
             ]}
           >
-            <h1 class="ml16">Made with love</h1>
+            <h1 className="ml16">Made with love</h1>
           </Anime> */}
-          <div className="header__nav">
-            <nav>
-              <Link to="#about">About</Link>
-              <Link to="#work">Work</Link>
-            </nav>
-          </div>
+        <div className="header__nav">
+          <nav>
+            <Link to="#about">About</Link>
+            <Link to="#work">Work</Link>
+          </nav>
         </div>
-        <div className="header__desc">
-          <h2>Hi I'm <span>MAYU.</span></h2>
-          <p>a front-end web developer based in Vancouver</p>
-        </div>
+      </div>
+      <div className="header__desc">
+        <h2>Hi I'm <span>MAYU</span></h2>
+        <p>a front-end web developer based in Vancouver</p>
       </div>
     </header>
   )

@@ -4,13 +4,15 @@ import '../styles/styles.scss'
 import Header from "../components/Header/header"
 import About from "../components/about"
 import Works from "../components/Works/works"
+import Footer from "../components/Footer/footer"
 
 
 const IndexPage = () => (
-  <div>
+  <div className="contentWrapper">
     <Header />
     <About />
     <Works />
+    <Footer />
   </div>
 )
 

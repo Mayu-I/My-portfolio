@@ -1,9 +1,43 @@
 .works{
     &__list{
+        margin-top: 20px;
+    }
+    &__item{
+        border: 2px solid $black;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    &__title{
+        font-size: 1.3rem;
+    }
+    &__desc{
+        margin-top: 10px;
+    }
+    &__skill{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        margin-top: 15px;
         li{
-            @include sp{
-                width: 100%;
-            }
+            display: inline;
+            border:2px solid $yellow;
+            // background-color: #fff;
+            margin: 5px;
+            padding: 2px 7px 3px;
+            border-radius: 5px;
+            font-size: 0.8rem;
         }
+    }
+    &__linkBtn{
+        font-weight: bold;
+        text-decoration: none;
+        color: $theme-color;
+    }
+    &__img{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: block;
     }
 }

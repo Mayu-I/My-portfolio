@@ -1,10 +1,14 @@
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/works";
+@import "partials/about";
+@import "partials/ress";
+@import "partials/footer";
 
 html, body{
     font-family: $font;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 ul{
@@ -51,6 +55,16 @@ ul{
             &:last-child{
                 margin-right: 0;
             }
+        }
+    }
+    &__desc{
+        text-align: center;
+        h2{
+            font-size: 1.9rem;
+        }
+        p{
+            font-size: 0.9rem;
+            margin-top: 10px;
         }
     }
 }
