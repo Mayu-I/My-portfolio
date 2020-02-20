@@ -1,25 +1,20 @@
 @import "partials/variables";
+@import "partials/mixins";
+@import "partials/works";
 
 html, body{
     font-family: $font;
     font-size: 16px;
 }
 
+ul{
+    list-style-type: none;
+}
+
 .contentWrapper{
-    width: 1640px;
-    min-width: 1640px;
-    margin: 0 auto;
-    @media(max-width: 1440px){
-        width: 1280px;
-        min-width: 1280px;
-    }
-    @media(max-width: 1280px){
-        width: 976px;
-        min-width: 976px;
-    }
-    @media(max-width: 976px){
-        width: 768px;
-        min-width: 768px;
+    @include content-wrapper;
+    @include sp{
+        @include content-wrapper--sp;
     }
 }
 
@@ -36,6 +31,8 @@ html, body{
         height: 80px;
     }
     &__logo{
+        width: 50px;
+        height: 50px;
         a{
             font-weight: 700;
             text-decoration: none;
@@ -57,3 +54,20 @@ html, body{
         }
     }
 }
+
+//typing js
+
+.ml16 {
+    color: $black;
+    padding: 40px 0;
+    font-weight: 800;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    overflow: hidden;
+  }
+  
+  .ml16 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }

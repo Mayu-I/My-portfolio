@@ -1,0 +1,9 @@
+.works{
+    &__list{
+        li{
+            @include sp{
+                width: 100%;
+            }
+        }
+    }
+}
