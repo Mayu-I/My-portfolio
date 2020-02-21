@@ -52,7 +52,7 @@ const Header = () => {
 </div> */}
       </div>
       <div className="header__desc">
-        <h2>Hi I'm <span>MAYU</span></h2>
+        <h2>Hi! I'm <span>MAYU</span></h2>
         <p>a front-end web developer based in Vancouver</p>
       </div>
     </header>
