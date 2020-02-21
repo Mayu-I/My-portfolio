@@ -51,6 +51,7 @@ a{
         }
     }
     &__nav{
+        padding-right: 10px;
         a{
             margin: 0 20px;
             text-decoration: none;
@@ -63,10 +64,25 @@ a{
             }
         }
     }
+    &__gnav{
+        display: inline;
+        font-size: 2.4rem;
+        letter-spacing: 1.5px;
+        padding: 30px 0 10px;
+        &List{
+        display: flex;
+        }
+    &Item{
+        a{
+            font-size: 0.7rem;
+            outline:none;
+        }
+    }
+    }
     &__desc{
         text-align: center;
-        margin-top: 150px;
-        margin-bottom: 170px;
+        margin-top: 170px;
+        margin-bottom: 190px;
         h2{
             font-size: 2.2rem;
         }
@@ -77,6 +93,81 @@ a{
         }
     }
 }
+
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 46px;
+    display: block;
+    @include pc{    
+        display: none;
+    }
+    @include tb{
+        top:42px;
+    }
+    @include sp{
+        width: 34px;
+        height: 28px;
+        top: 38px;
+        left: 27px;
+    }
+  }
+
+.bm-burger-bars {
+    background: #000;
+    border-radius: 30px;
+    height: 4px!important;
+}
+  
+.bm-burger-bars-hover {
+    background: #000;
+}
+
+  .bm-cross-button {
+    height: 26px;
+    width: 26px;
+  }
+
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    @include sp{
+        width: 50%!important;
+    }
+  }
+  
+  .bm-menu {
+    background: #fff;
+    padding: 2.5em 0;
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  
+  .bm-morph-shape {
+    fill: #fff;
+  }
+
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8rem;
+    padding-right: 4rem;
+  }
+
+  .bm-item {
+    display: inline-block;
+  }
+
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+  }
 
 //typing js
 

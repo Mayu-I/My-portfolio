@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+// import Burger from './Burger/burger'
 
 
 // import ReactAnime from 'react-animejs'
@@ -46,10 +47,13 @@ const Header = () => {
             <Link to="#work">Work</Link>
           </nav>
         </div>
+        {/* <div className="header__gnav">
+          <Burger />
+</div> */}
       </div>
       <div className="header__desc">
         <h2>Hi I'm <span>MAYU</span></h2>
-        <p>a front-end web developer based in Vacouver</p>
+        <p>a front-end web developer based in Vancouver</p>
       </div>
     </header>
   )
