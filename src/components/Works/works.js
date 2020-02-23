@@ -69,8 +69,8 @@ const Works = () => {
         <div className="works__item">
           <h3 className="works__title">Inhabitent</h3>
           <p className="works__desc">Wordpress custom theme built for a camping company.</p>
-          <a className="works__img" href="https://tent.academy.red/"><Img fluid={data.inhabitent.childImageSharp.fluid} /></a>
-          <a className="works__linkBtn" href="https://tent.academy.red/">Go to website→</a>
+          <a className="works__img" href="https://tent.academy.red"><Img fluid={data.inhabitent.childImageSharp.fluid} /></a>
+          <a className="works__linkBtn" href="https://tent.academy.red">Go to website→</a>
           <ul className="works__skill">
             <li>Wordpress</li>
             <li>PHP</li>
