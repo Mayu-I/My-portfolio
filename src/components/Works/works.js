@@ -8,42 +8,42 @@ const Works = () => {
     query {
       inhabitent: file(relativePath: { eq: "inhabitent.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
         }
       instanews: file(relativePath: { eq: "instanews.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
         }
       signalog: file(relativePath: { eq: "signalog.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
         }
       burger: file(relativePath: { eq: "burger.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       quotesondev: file(relativePath: { eq: "quotes.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       react: file(relativePath: { eq: "react.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -93,8 +93,8 @@ const Works = () => {
         <div className="works__item">
           <h3 className="works__title">Quotes on Dev</h3>
           <p className="works__desc">My Japanese blog built with Gatsby.js</p>
-          <a className="works__img" href="https://quotes.academy.red/"><Img fluid={data.quotesondev.childImageSharp.fluid} /></a>
-          <a className="works__linkBtn" href="https://quotes.academy.red/">Go to website→</a>
+          <a className="works__img" href="https://quotes.academy.red"><Img fluid={data.quotesondev.childImageSharp.fluid} /></a>
+          <a className="works__linkBtn" href="https://quotes.academy.red">Go to website→</a>
           <ul className="works__skill">
             <li>React</li>
             <li>Gatsby</li>
