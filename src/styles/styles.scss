@@ -8,12 +8,12 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: $font;
     font-size: 1.6rem;
-    scroll-behavior: smooth;
 }
 
 ul{
@@ -21,6 +21,7 @@ ul{
 }
 
 a{
+    transition: 0.5s;
     &:hover{
         opacity: 0.6;
     }

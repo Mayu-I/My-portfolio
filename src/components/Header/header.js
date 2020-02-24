@@ -18,12 +18,19 @@ const Header = () => {
           ...GatsbyImageSharpFluid
         }
       }
+    },
+    babyImage: file(relativePath: { eq: "baby_me.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
   }
 `)
 
   return (
-    <header>
+    <header className="header">
       <div className="header__wrapper">
         <div className="header__logo">
           <Link to="/"><Img fluid={data.logoImage.childImageSharp.fluid} /></Link>
@@ -52,8 +59,13 @@ const Header = () => {
 </div> */}
       </div>
       <div className="header__desc">
-        <h2>Hi! I'm <span>MAYU</span></h2>
-        <p>a front-end web developer based in Vancouver</p>
+        <div className="header__baby">
+          <Img fluid={data.babyImage.childImageSharp.fluid} />
+        </div>
+        <div>
+          <h2>Hi! I'm <span>MAYU</span></h2>
+          <p>a front-end web developer based in Vancouver</p>
+        </div>
       </div>
     </header>
   )

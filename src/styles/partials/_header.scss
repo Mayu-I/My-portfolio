@@ -1,9 +1,5 @@
 .header{
-    height: 80px;
-    width:100%;
-    position:absolute;
-    top:0px;
-    z-index: 10;
+    margin-top: 20px;
     &__wrapper{
         display: flex;
         align-items: center;
@@ -11,8 +7,11 @@
         height: 80px;
     }
     &__logo{
+        width:70px;
+        @include sp{
         width: 50px;
         height: 50px;
+        }
         a{
             font-weight: 700;
             text-decoration: none;
@@ -27,7 +26,7 @@
             text-decoration: none;
             letter-spacing: 1.75px;
             text-transform: uppercase;
-            font-size: 1rem;
+            font-size: 1.3rem;
             color: $black;
             &:last-child{
                 margin-right: 0;
@@ -50,9 +49,16 @@
     }
     }
     &__desc{
+        margin-top: 150px;
+        margin-bottom: 170px;
+        display: flex;
         text-align: center;
-        margin-top: 190px;
-        margin-bottom: 210px;
+        align-items: center;
+        @include sp{
+          flex-direction: column-reverse;
+          margin-top: 190px;
+          margin-bottom: 210px;
+        }
         h2{
             font-size: 3rem;
         }
@@ -61,6 +67,13 @@
             margin-top: 30px;
             text-decoration: underline;
         }
+    }
+    &__baby{
+      margin: auto;
+      width: 300px;
+      @include sp{
+        width: 200px;
+      }
     }
 }
 

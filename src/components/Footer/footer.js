@@ -26,7 +26,7 @@ const Footer = () => (
                 </ul>
             </nav>
             <div className="footer__copy">
-                <p>Copyright &copy; 2019 signalog All Rights Reserved.</p>
+                <p>&copy; 2020 - Mayu Imanaka</p>
             </div>
         </div>
     </footer>
