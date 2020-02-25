@@ -12,7 +12,7 @@ import Img from "gatsby-image"
 const Header = () => {
   const data = useStaticQuery(graphql`
   query {
-    logoImage: file(relativePath: { eq: "logo.png" }) {
+    logoImage: file(relativePath: { eq: "icon.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
@@ -54,22 +54,14 @@ const Header = () => {
         </div>
         <div>
           <h2>Hi! I'm
-          {/* <Anime
-              className="name-animation"
-              targets=".name .letter"
-              easing="easeOutExpo"
-              duration={1400}
-              delay={(el, i) => i * 30}
-              translateY={[-100, 0]}> */}
             <span className="header__name">
               <span data-content="M">M</span>
               <span data-content="A">A</span>
               <span data-content="Y">Y</span>
               <span data-content="U">U</span>
             </span>
-            {/* </Anime> */}
           </h2>
-          <p>a front-end web developer based in Vancouver</p>
+          <p className="header__text">a front-end web developer based in Vancouver</p>
         </div>
       </div>
     </header >
