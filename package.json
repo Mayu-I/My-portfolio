@@ -21,6 +21,7 @@
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-anime": "^3.0.3",
     "react-animejs": "^0.5.3",
     "react-burger-menu": "^2.6.13",
     "react-dom": "^16.12.0",

@@ -2,10 +2,10 @@ import { Link } from "gatsby"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+// import Anime from "react-anime"
 // import Burger from './Burger/burger'
 
 
-// import ReactAnime from 'react-animejs'
 // const { Anime, stagger } = ReactAnime;
 
 
@@ -28,6 +28,9 @@ const Header = () => {
     }
   }
 `)
+  // let textWrapper = document.querySelector('.name');
+  // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
 
   return (
     <header className="header">
@@ -35,19 +38,6 @@ const Header = () => {
         <div className="header__logo">
           <Link to="/"><Img fluid={data.logoImage.childImageSharp.fluid} /></Link>
         </div>
-        {/* <Anime
-            initial={[
-              {
-                targets: '.ml16 .letter',
-                translateY: [-100, 0],
-                easing: "easeOutExpo",
-                duration: 1400,
-                delay: (el, i) => 30 * i
-              }
-            ]}
-          >
-            <h1 className="ml16">Made with love</h1>
-          </Anime> */}
         <div className="header__nav">
           <nav>
             <Link to="#about">About</Link>
@@ -63,11 +53,26 @@ const Header = () => {
           <Img fluid={data.babyImage.childImageSharp.fluid} />
         </div>
         <div>
-          <h2>Hi! I'm <span>MAYU</span></h2>
+          <h2>Hi! I'm
+          {/* <Anime
+              className="name-animation"
+              targets=".name .letter"
+              easing="easeOutExpo"
+              duration={1400}
+              delay={(el, i) => i * 30}
+              translateY={[-100, 0]}> */}
+            <span className="header__name">
+              <span data-content="M">M</span>
+              <span data-content="A">A</span>
+              <span data-content="Y">Y</span>
+              <span data-content="U">U</span>
+            </span>
+            {/* </Anime> */}
+          </h2>
           <p>a front-end web developer based in Vancouver</p>
         </div>
       </div>
-    </header>
+    </header >
   )
 }
 
