@@ -1,7 +1,7 @@
-// import { Link } from "gatsby"
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+import Fade from 'react-reveal/Fade';
 
 const Works = () => {
   const data = useStaticQuery(graphql`
@@ -51,54 +51,71 @@ const Works = () => {
       }
   `)
   return (
-    <div className="works" id="work">
-      <h2>WORK</h2>
+    <section className="works" id="work">
+      <h2 className="title">WORK</h2>
       <div className="works__list">
+        <Fade>
+          <div className="works__item">
+            <a href="https://signalog.org/" target="_blank" rel="noopener
+noreferrer"><h3 className="works__title">Signalog</h3></a>
+            <p className="works__desc">My personal blog built with Gatsby.js.</p>
+            <a className="works__img" href="https://signalog.org/" target="_blank" rel="noopener
+noreferrer"><Img fluid={data.signalog.childImageSharp.fluid} /></a>
+            <ul className="works__skill">
+              <li>Gatsby</li>
+              <li>React</li>
+              <li>Graphql</li>
+              <li>Sass</li>
+            </ul>
+          </div>
+        </Fade>
+        <Fade>
+          <div className="works__item">
+            <a href="https://tent.academy.red" target="_blank" rel="noopener
+noreferrer"><h3 className="works__title">Inhabitent</h3></a>
+            <p className="works__desc">Wordpress custom theme built for a camping company.</p>
+            <a className="works__img" href="https://tent.academy.red" target="_blank" rel="noopener
+noreferrer"><Img fluid={data.inhabitent.childImageSharp.fluid} /></a>
+            <ul className="works__skill">
+              <li>Wordpress</li>
+              <li>PHP</li>
+              <li>Javascript</li>
+              <li>Sass</li>
+            </ul>
+          </div>
+        </Fade>
+        <Fade>
+          <div className="works__item">
+            <a href="https://mayu-i.github.io/Instanews-app/" target="_blank" rel="noopener
+noreferrer"><h3 className="works__title">Insta News</h3></a>
+            <p className="works__desc">New York Times News API front-end</p>
+            <a className="works__img" href="https://mayu-i.github.io/Instanews-app/" target="_blank" rel="noopener
+noreferrer"><Img fluid={data.instanews.childImageSharp.fluid} /></a>
+            <ul className="works__skill">
+              <li>Javascript</li>
+              <li>Jquery</li>
+              <li>HTML5</li>
+              <li>Sass</li>
+            </ul>
+          </div>
+        </Fade>
+        <Fade>
+          <div className="works__item">
+          <a href="https://quotes.academy.red" target="_blank" rel="noopener
+noreferrer"><h3 className="works__title">Quotes on Dev</h3></a>
+            <p className="works__desc">A website called Quotes on Dev using the WordPress REST API.</p>
+            <a className="works__img" href="https://quotes.academy.red" target="_blank" rel="noopener
+noreferrer"><Img fluid={data.quotesondev.childImageSharp.fluid} /></a>
+            <ul className="works__skill">
+              <li>React</li>
+              <li>Gatsby</li>
+              <li>Graphql</li>
+              <li>Sass</li>
+            </ul>
+          </div>
+        </Fade>
+        {/* 
         <div className="works__item">
-          <a href="https://signalog.org/" target="_blank"><h3 className="works__title">Signalog</h3></a>
-          <p className="works__desc">My personal blog built with Gatsby.js.</p>
-          <a className="works__img" href="https://signalog.org/" target="_blank"><Img fluid={data.signalog.childImageSharp.fluid} /></a>
-          <ul className="works__skill">
-            <li>Gatsby</li>
-            <li>React</li>
-            <li>Graphql</li>
-            <li>Sass</li>
-          </ul>
-        </div>
-        <div className="works__item">
-          <a href="https://tent.academy.red" target="_blank"><h3 className="works__title">Inhabitent</h3></a>
-          <p className="works__desc">Wordpress custom theme built for a camping company.</p>
-          <a className="works__img" href="https://tent.academy.red" target="_blank"><Img fluid={data.inhabitent.childImageSharp.fluid} /></a>
-          <ul className="works__skill">
-            <li>Wordpress</li>
-            <li>PHP</li>
-            <li>Javascript</li>
-            <li>Sass</li>
-          </ul>
-        </div>
-        <div className="works__item">
-          <a href="https://mayu-i.github.io/Instanews-app/" target="_blank"><h3 className="works__title">Insta News</h3></a>
-          <p className="works__desc">New York Times News API front-end</p>
-          <a className="works__img" href="https://mayu-i.github.io/Instanews-app/" target="_blank"><Img fluid={data.instanews.childImageSharp.fluid} /></a>
-          <ul className="works__skill">
-            <li>Javascript</li>
-            <li>Jquery</li>
-            <li>HTML5</li>
-            <li>Sass</li>
-          </ul>
-        </div>
-        <div className="works__item">
-          <h3 className="works__title">Quotes on Dev</h3>
-          <p className="works__desc">My Japanese blog built with Gatsby.js</p>
-          <a className="works__img" href="https://quotes.academy.red" target="_blank"><Img fluid={data.quotesondev.childImageSharp.fluid} /></a>
-          <ul className="works__skill">
-            <li>React</li>
-            <li>Gatsby</li>
-            <li>Graphql</li>
-            <li>Sass</li>
-          </ul>
-        </div>
-        {/* <div className="works__item">
           <h3 className="works__title">Manga Reader App<br />(Coming up soon!)</h3>
           <p className="works__desc">I'm currently working on PWA manga reader app using manga eden api</p>
           <div className="works__img"><Img fluid={data.react.childImageSharp.fluid} /></div>
@@ -113,7 +130,7 @@ const Works = () => {
       <div className="works__more">
         <a href="https://github.com/Mayu-I?tab=repositories" >VIEW MORE</a>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -19,7 +19,7 @@ const Header = () => {
         }
       }
     },
-    babyImage: file(relativePath: { eq: "baby_me2.png" }) {
+    babyImage: file(relativePath: { eq: "baby_me.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid

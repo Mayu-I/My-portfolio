@@ -7,12 +7,15 @@
         justify-content: space-between;
         height: 80px;
         position: fixed;
-        width: 850px;
+        width: 950px;
         z-index: 3;
         @include pc{
           top: 50px;
-          left: 55%;
+          left: 53%;
           transform:translate(-50%, -50%);
+        }
+        @include tb{
+          width: 85vw;
         }
         @include sp{
           width: 100%;
@@ -36,7 +39,7 @@
         a{
             margin: 0 20px;
             text-decoration: none;
-            letter-spacing: 1.75px;
+            letter-spacing: $spacing;
             text-transform: uppercase;
             font-size: 1.3rem;
             color: $black;
@@ -81,21 +84,6 @@
             }
         }
     }
-    &__gnav{
-        display: inline;
-        font-size: 3rem;
-        letter-spacing: 1.5px;
-        padding: 30px 0 10px;
-        &List{
-        display: flex;
-        }
-    &Item{
-        a{
-            font-size: 1rem;
-            outline:none;
-        }
-    }
-    }
     &__desc{
         display: flex;
         text-align: center;
@@ -106,6 +94,7 @@
         }
         h2{
             font-size: 3rem;
+            letter-spacing: $spacing;
         }
         p{
             font-size: 1.5rem;

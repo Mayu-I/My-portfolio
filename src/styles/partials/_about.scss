@@ -1,20 +1,10 @@
 .about{
     margin-top: 50px;
     height: 50vh;
-    h2{
-    text-align: center;
-    padding-top: 50px;
-    margin-bottom: 50px;
-    }
     p{
         margin-top: 20px;
         line-height: 1.7;
         font-size: 1.8rem;
         text-align: center;
-        @include pc{
-            width: 550px;
-            margin-right: auto;
-            margin-left: auto;
-        }
     }
 }

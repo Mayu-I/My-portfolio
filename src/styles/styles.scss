@@ -13,7 +13,10 @@ html{
 
 body{
     font-family: $font;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    @include sp{
+        font-size: 1.6rem;
+    }
 }
 
 ul{
@@ -31,6 +34,12 @@ a{
     @include sp{
         @include content-wrapper--sp;
     }
+}
+
+.title{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
 }
 
 @keyframes down {
