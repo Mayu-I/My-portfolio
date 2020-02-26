@@ -4,6 +4,7 @@ import '../styles/styles.scss'
 import Header from "../components/Header/header"
 import About from "../components/about"
 import Works from "../components/Works/works"
+import Contact from "../components/contact"
 import Footer from "../components/Footer/footer"
 
 
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <Header />
     <About />
     <Works />
+    <Contact />
     <Footer />
   </div>
 )

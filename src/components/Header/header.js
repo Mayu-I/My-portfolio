@@ -2,11 +2,6 @@ import { Link } from "gatsby"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-// import Anime from "react-anime"
-// import Burger from './Burger/burger'
-
-
-// const { Anime, stagger } = ReactAnime;
 
 
 const Header = () => {
@@ -28,8 +23,6 @@ const Header = () => {
     }
   }
 `)
-  // let textWrapper = document.querySelector('.name');
-  // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 
   return (
@@ -42,18 +35,17 @@ const Header = () => {
           <nav>
             <Link to="#about">About</Link>
             <Link to="#work">Work</Link>
+            <a href="https://drive.google.com/file/d/1S5cBzjj1iRSmgjzg436ttenhRxc0XN4Q/view?usp=sharing" target="_blank"  rel="noopener
+noreferrer">Resume</a>
           </nav>
         </div>
-        {/* <div className="header__gnav">
-          <Burger />
-</div> */}
       </div>
       <div className="header__desc">
         <div className="header__baby">
           <Img fluid={data.babyImage.childImageSharp.fluid} />
         </div>
         <div>
-          <h2>Hi! I'm
+          <h2>Hi! My name is
             <span className="header__name">
               <span data-content="M">M</span>
               <span data-content="A">A</span>

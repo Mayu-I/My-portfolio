@@ -107,9 +107,9 @@ noreferrer"><h3 className="works__title">Quotes on Dev</h3></a>
             <a className="works__img" href="https://quotes.academy.red" target="_blank" rel="noopener
 noreferrer"><Img fluid={data.quotesondev.childImageSharp.fluid} /></a>
             <ul className="works__skill">
-              <li>React</li>
-              <li>Gatsby</li>
-              <li>Graphql</li>
+            <li>Wordpress</li>
+              <li>PHP</li>
+              <li>Javascript</li>
               <li>Sass</li>
             </ul>
           </div>
@@ -128,7 +128,8 @@ noreferrer"><Img fluid={data.quotesondev.childImageSharp.fluid} /></a>
         </div> */}
       </div>
       <div className="works__more">
-        <a href="https://github.com/Mayu-I?tab=repositories" >VIEW MORE</a>
+        <a href="https://github.com/Mayu-I?tab=repositories" target="_blank" rel="noopener
+noreferrer">VIEW MORE</a>
       </div>
     </section>
   )

@@ -89,6 +89,7 @@
         text-align: center;
         align-items: center;
         height: 100vh;
+        justify-content: space-between;
         @include sp{
           flex-direction: column-reverse;
         }
@@ -106,7 +107,6 @@
         }
     }
     &__baby{
-      margin: auto;
       width: 325px;
       @include sp{
         margin-top: 30px;
