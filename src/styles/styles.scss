@@ -14,6 +14,7 @@ html{
 body{
     font-family: $font;
     font-size: 1.8rem;
+    cursor: url('../images/cursor-circle.svg'), auto;	
     @include sp{
         font-size: 1.6rem;
     }
