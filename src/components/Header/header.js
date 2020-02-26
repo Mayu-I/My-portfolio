@@ -61,7 +61,7 @@ const Header = () => {
               <span data-content="U">U</span>
             </span>
           </h2>
-          <p className="header__text">a front-end web developer based in Vancouver</p>
+          <p className="header__text">a web developer based in Vancouver</p>
         </div>
       </div>
     </header >

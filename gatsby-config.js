@@ -32,5 +32,18 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-  ],
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank"
+            }
+          }
+        ],
+      }
+    }
+  ]
 }

@@ -7,11 +7,17 @@
         justify-content: space-between;
         height: 80px;
         position: fixed;
-        width: 800px;
+        width: 850px;
         z-index: 3;
-        top: 50px;
-        left: 50%;
-        transform:translate(-50%, -50%)
+        @include pc{
+          top: 50px;
+          left: 55%;
+          transform:translate(-50%, -50%);
+        }
+        @include sp{
+          width: 100%;
+          position: relative;
+        }
     }
     &__logo{
         width:30px;
@@ -91,15 +97,12 @@
     }
     }
     &__desc{
-        padding-top: 210px;
-        margin-bottom: 230px;
         display: flex;
         text-align: center;
         align-items: center;
+        height: 100vh;
         @include sp{
           flex-direction: column-reverse;
-          margin-top: 190px;
-          margin-bottom: 210px;
         }
         h2{
             font-size: 3rem;
@@ -117,6 +120,7 @@
       margin: auto;
       width: 325px;
       @include sp{
+        margin-top: 30px;
         width: 200px;
       }
     }
@@ -159,97 +163,3 @@
       }
     }
 }
-@keyframes down {
-  0% {
-      opacity:  0;
-      top: 50px;
-  }
-  100% {
-      opacity:  1;
-      top: 0;
-  }
-}
-@keyframes falls{
-  0%{
-    top: -30px;
-  }
-  100%{
-    opacity: 1;
-    top: 0;
-  }
-}
-
-.bm-burger-button {
-    position: fixed;
-    width: 36px;
-    height: 30px;
-    left: 36px;
-    top: 46px;
-    display: block;
-    @include pc{    
-        display: none;
-    }
-    @include tb{
-        top:42px;
-    }
-    @include sp{
-        width: 34px;
-        height: 28px;
-        top: 38px;
-        left: 27px;
-    }
-  }
-
-.bm-burger-bars {
-    background: #000;
-    border-radius: 30px;
-    height: 4px!important;
-}
-  
-.bm-burger-bars-hover {
-    background: #000;
-}
-
-  .bm-cross-button {
-    height: 26px;
-    width: 26px;
-  }
-
-  .bm-cross {
-    background: #bdc3c7;
-  }
-
-  .bm-menu-wrap {
-    position: fixed;
-    height: 100%;
-    top: 0;
-    @include sp{
-        width: 50%!important;
-    }
-  }
-  
-  .bm-menu {
-    background: #fff;
-    padding: 2.5em 0;
-    font-size: 3rem;
-    width: 100%;
-  }
-  
-  .bm-morph-shape {
-    fill: #fff;
-  }
-
-  .bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8rem;
-    padding-right: 4rem;
-  }
-
-  .bm-item {
-    display: inline-block;
-  }
-
-  .bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
-    top: 0;
-  }

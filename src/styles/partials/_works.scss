@@ -3,6 +3,7 @@
     h2{
         text-align: center;
         padding-top: 20px;
+        margin-bottom: 50px;
     }
     &__list{
         margin-top: 20px;
@@ -15,10 +16,10 @@
         margin-top: 30px;
     }
     &__title{
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     &__desc{
-        margin-top: 10px;
+        margin-top: 20px;
     }
     &__skill{
         margin-left: 0;
@@ -28,7 +29,6 @@
         li{
             display: inline;
             border:2px solid $yellow;
-            // background-color: #fff;
             margin: 5px;
             padding: 2px 7px 3px;
             border-radius: 5px;
@@ -43,18 +43,33 @@
     &__img{
         margin-top: 20px;
         margin-bottom: 10px;
+        width: 605px;
+        height: 300px;
+        overflow: hidden;
         display: block;
+        img{
+            transition: 0.5s!important;
+            width: 605px;
+            display: block;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
     }
     &__more{
         text-align: center;
         margin-top: 20px;
         a{
-            padding: 6px 10px 7px;
+            padding: 12px 10px 10px;
             color: #fff;
             background-color: $black;
             display: inline-block;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            @include sp{
+                font-size: 1.2rem;
+                padding: 6px 10px 7px;
+            }
         }
     }
 }
