@@ -2,6 +2,7 @@
 @import "partials/mixins";
 @import "partials/works";
 @import "partials/about";
+@import "partials/contact";
 @import "partials/ress";
 @import "partials/header";
 @import "partials/footer";
@@ -43,6 +44,23 @@ a{
     margin-bottom: 50px;
 }
 
+.black-btn{
+        letter-spacing: $spacing;
+        text-align: center;
+        margin-top: 40px;
+        a{
+            padding: 12px 10px 10px;
+            color: #fff;
+            background-color: $black;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.5rem;
+            @include sp{
+                font-size: 1.2rem;
+                padding: 6px 10px 7px;
+            }
+        }
+}
 @keyframes down {
     0% {
         opacity:  0;

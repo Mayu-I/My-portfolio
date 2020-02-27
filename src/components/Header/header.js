@@ -33,10 +33,10 @@ const Header = () => {
         </div>
         <div className="header__nav">
           <nav>
-            <Link to="#about">About</Link>
-            <Link to="#work">Work</Link>
-            <a href="https://drive.google.com/file/d/1S5cBzjj1iRSmgjzg436ttenhRxc0XN4Q/view?usp=sharing" target="_blank"  rel="noopener
-noreferrer">Resume</a>
+            <a href="#contact">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+            <a href="https://drive.google.com/file/d/1S5cBzjj1iRSmgjzg436ttenhRxc0XN4Q/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
           </nav>
         </div>
       </div>
