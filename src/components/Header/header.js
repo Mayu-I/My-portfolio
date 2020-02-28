@@ -33,7 +33,7 @@ const Header = () => {
         </div>
         <div className="header__nav">
           <nav>
-            <a href="#contact">About</a>
+            <a href="#about">About</a>
             <a href="#work">Work</a>
             <a href="#contact">Contact</a>
             <a href="https://drive.google.com/file/d/1S5cBzjj1iRSmgjzg436ttenhRxc0XN4Q/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>

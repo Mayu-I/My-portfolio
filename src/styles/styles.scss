@@ -14,7 +14,8 @@ html{
 
 body{
     font-family: $font;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    letter-spacing: 0.5px;
     cursor: url('../images/cursor-circle.svg'), auto;	
     @include sp{
         font-size: 1.6rem;
@@ -50,14 +51,18 @@ a{
         margin-top: 40px;
         a{
             padding: 12px 10px 10px;
-            color: #fff;
-            background-color: $black;
+            border: 2px solid $black;
+            background-color: #fff;
             display: inline-block;
             text-decoration: none;
             font-size: 1.5rem;
+            font-weight: bold;
             @include sp{
                 font-size: 1.2rem;
                 padding: 6px 10px 7px;
+            }
+            &:hover{
+                animation: btn-hover 0.8s ease 0s forwards;
             }
         }
 }
@@ -79,5 +84,16 @@ a{
     100%{
       opacity: 1;
       top: 0;
+    }
+  }
+
+  @keyframes btn-hover{
+    0%{
+        border: 2px solid $black;
+        background-color: #fff;
+    }
+    100%{
+        background-color: $black;
+        color: #ffffff;
     }
   }
