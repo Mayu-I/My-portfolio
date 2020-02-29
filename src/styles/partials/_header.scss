@@ -35,6 +35,9 @@
     }
     &__nav{
         padding-right: 10px;
+        @include pc{
+        width: 350px;
+        }
         a{
             margin: 0 10px;
             text-decoration: none;
@@ -101,7 +104,7 @@
           justify-content: center;
         }
         h2{
-            font-size: 3rem;
+            font-size: 2.8rem;
             letter-spacing: $spacing;
             @include sp{
               font-size: 2.5rem;
@@ -118,6 +121,9 @@
               font-size: 1.4rem;
             }
         }
+    }
+    &__intro{
+      width: 350px;
     }
     &__baby{
       width: 325px;
