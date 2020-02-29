@@ -106,18 +106,6 @@ const Works = () => {
             </ul>
           </div>
         </Fade>
-        {/* 
-        <div className="works__item">
-          <h3 className="works__title">Manga Reader App<br />(Coming up soon!)</h3>
-          <p className="works__desc">I'm currently working on PWA manga reader app using manga eden api</p>
-          <div className="works__img"><Img fluid={data.react.childImageSharp.fluid} /></div>
-          <ul className="works__skill">
-            <li>React</li>
-            <li>MongoDB</li>
-            <li>Graphql</li>
-            <li>Sass</li>
-          </ul>
-        </div> */}
       </div>
       <div className="black-btn">
         <a href="https://github.com/Mayu-I?tab=repositories" target="_blank" rel="noopener noreferrer">VIEW MORE</a>
