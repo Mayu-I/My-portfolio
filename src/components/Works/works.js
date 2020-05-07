@@ -107,9 +107,9 @@ const Works = () => {
         </Fade>
         <Fade>
           <div className="works__item">
-            <a href="https://tent.academy.red" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Inhabitent</h3></a>
+            <a href="https://github.com/Mayu-I/Inhabitent-site" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Inhabitent</h3></a>
             <p className="works__desc">Wordpress custom theme built for a camping company.</p>
-            <a className="works__img" href="https://tent.academy.red" target="_blank" rel="noopener noreferrer"><Img fluid={data.inhabitent.childImageSharp.fluid} /></a>
+            <a className="works__img" href="https://github.com/Mayu-I/Inhabitent-site" target="_blank" rel="noopener noreferrer"><Img fluid={data.inhabitent.childImageSharp.fluid} /></a>
             <ul className="works__skill">
               <li>Wordpress</li>
               <li>PHP</li>
@@ -133,9 +133,9 @@ const Works = () => {
         </Fade>
         <Fade>
           <div className="works__item">
-            <a href="https://quotes.academy.red" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Quotes on Dev</h3></a>
+            <a href="https://github.com/Mayu-I/Quotes-on-dev" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Quotes on Dev</h3></a>
             <p className="works__desc">A website called Quotes on Dev using the WordPress REST API.</p>
-            <a className="works__img" href="https://quotes.academy.red" target="_blank" rel="noopener noreferrer"><Img fluid={data.quotesondev.childImageSharp.fluid} /></a>
+            <a className="works__img" href="https://github.com/Mayu-I/Quotes-on-dev" target="_blank" rel="noopener noreferrer"><Img fluid={data.quotesondev.childImageSharp.fluid} /></a>
             <ul className="works__skill">
               <li>Wordpress</li>
               <li>PHP</li>
