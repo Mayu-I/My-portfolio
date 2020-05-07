@@ -48,12 +48,38 @@ const Works = () => {
           }
         }
       }
+      emoji: file(relativePath: { eq: "emoji.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      gallery: file(relativePath: { eq: "gallery.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       }
   `)
   return (
     <section className="works" id="work">
       <h2 className="title">WORK</h2>
       <div className="works__list">
+        <Fade>
+          <div className="works__item">
+            <a href="https://mayu-i.github.io/React-unsplash-gallery/#/SnapScout/mountain" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Unsplash Gallery</h3></a>
+            <p className="works__desc">Photo search with Unsplash API</p>
+            <a className="works__img" href="https://mayu-i.github.io/React-unsplash-gallery/#/SnapScout/mountain" target="_blank" rel="noopener noreferrer"><Img fluid={data.gallery.childImageSharp.fluid} /></a>
+            <ul className="works__skill">
+              <li>React</li>
+              <li>API</li>
+              <li>Sass</li>
+            </ul>
+          </div>
+        </Fade>
         <Fade>
           <div className="works__item">
             <a href="https://signalog.org/" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Signalog</h3></a>
@@ -64,6 +90,18 @@ const Works = () => {
               <li>React</li>
               <li>Graphql</li>
               <li>Sass</li>
+            </ul>
+          </div>
+        </Fade>
+        <Fade>
+          <div className="works__item">
+            <a href="https://mayu-i.github.io/React-emoji-search/" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Emoji Search</h3></a>
+            <p className="works__desc">React app for searching Emoji</p>
+            <a className="works__img" href="https://mayu-i.github.io/React-emoji-search/" target="_blank" rel="noopener noreferrer"><Img fluid={data.emoji.childImageSharp.fluid} /></a>
+            <ul className="works__skill">
+              <li>React</li>
+              <li>Javascript</li>
+              <li>CSS</li>
             </ul>
           </div>
         </Fade>
