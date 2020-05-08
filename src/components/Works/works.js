@@ -62,6 +62,13 @@ const Works = () => {
           }
         }
       }
+      compressor: file(relativePath: { eq: "compressor.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       }
   `)
   return (
@@ -77,6 +84,17 @@ const Works = () => {
               <li>React</li>
               <li>API</li>
               <li>Sass</li>
+            </ul>
+          </div>
+        </Fade>
+        <Fade>
+          <div className="works__item">
+            <a href="https://mayu-i.github.io/React-image-compressor/" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Image Compressor</h3></a>
+            <p className="works__desc">An offline image compressor built with React and browser-image-compression</p>
+            <a className="works__img" href="https://mayu-i.github.io/React-image-compressor/" target="_blank" rel="noopener noreferrer"><Img fluid={data.compressor.childImageSharp.fluid} /></a>
+            <ul className="works__skill">
+              <li>React</li>
+              <li>Bootstrap</li>
             </ul>
           </div>
         </Fade>
