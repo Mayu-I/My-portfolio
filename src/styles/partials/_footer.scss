@@ -1,72 +1,72 @@
-.footer{
-    &__wrapper{
-        padding: 70px 0 40px;
-        margin-top: 70px;
-        color: #000;
-        font-weight: 300;  
-        @include spandtb{
-            padding: 40px 0 20px;
-        }  
-        @include sp{
-            padding: 20px 0 10px;
-        }
+.footer {
+  &__wrapper {
+    padding: 70px 0 40px;
+    margin-top: 70px;
+    color: #000;
+    font-weight: 300;
+    @include spandtb {
+      padding: 40px 0 20px;
     }
-    &__follow{
-        letter-spacing: $spacing;
-        font-size: 1.9rem;
-        text-align: center;
-        font-weight: bold;
-        margin-bottom: 30px;
+    @include sp {
+      padding: 20px 0 10px;
     }
-    &__nav{
-        &List{
-            margin: auto;
-            font-size: 3.9rem;
-            display: flex;
-            width: 350px;
-            justify-content: space-between;
-            align-items: center;
-            @include tb{
-                width: 250px;
-                margin-left: 50px;
-            }
-            @include sp{
-                width: 75%;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 10px;
-            }
-        }
-        &Item{
-            & a{
-                color: #ffffff;
-                font-size: 2.9rem;
-                &:hover{
-                    color: $theme-color!important;
-                }
-            }
-        }
-        &Item--forrow{
-            width: 25px;
-            @include sp{
-                width: 20px;
-            }
-            img{
-                width:100%
-            }
-        }
+  }
+  &__follow {
+    letter-spacing: $spacing;
+    font-size: 1.9rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  &__nav {
+    &List {
+      margin: auto;
+      font-size: 3.9rem;
+      display: flex;
+      width: 150px;
+      justify-content: space-between;
+      align-items: center;
+      @include tb {
+        width: 250px;
+        margin-left: 50px;
+      }
+      @include sp {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+      }
     }
-    &__copy{
-        text-align: right;
-        margin-top: 90px;
-        margin-right: 40px;
-        margin-bottom: 20px;
-        color: #bcbcbc;
-        position: absolute;
-        right: 0;
-        @include sp{
-            margin-right: 10px;
-            font-size: 1rem;
+    &Item {
+      & a {
+        color: #ffffff;
+        font-size: 2.9rem;
+        &:hover {
+          color: $theme-color !important;
         }
+      }
     }
+    &Item--forrow {
+      width: 25px;
+      @include sp {
+        width: 20px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__copy {
+    text-align: right;
+    margin-top: 90px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    color: #bcbcbc;
+    position: absolute;
+    right: 0;
+    @include sp {
+      margin-right: 10px;
+      font-size: 1rem;
+    }
+  }
 }
