@@ -35,7 +35,7 @@ const Header = () => {
           <a href="#about">About</a>
           <a href="#work">Work</a>
           <a href="#contact">Contact</a>
-          <a href="https://drive.google.com/file/d/1l1567vc94Nk1csTIedKpH-it__ikEBtn/view" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="https://drive.google.com/file/d/1l1567vc94Nk1csTIedKpH-it__ikEBtn/view?usp=sharing">Resume</a>
         </div>
       </div>
       <div className="header__desc">
