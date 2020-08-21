@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+// import Burger from './Burger/burger';
 
 
 const Header = () => {
@@ -37,6 +38,7 @@ const Header = () => {
           <a href="#contact">Contact</a>
           <a href="https://drive.google.com/file/d/1l1567vc94Nk1csTIedKpH-it__ikEBtn/view?usp=sharing">Resume</a>
         </div>
+        {/* <Burger /> */}
       </div>
       <div className="header__desc">
         <div className="header__baby">

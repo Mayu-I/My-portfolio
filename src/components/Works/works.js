@@ -69,12 +69,31 @@ const Works = () => {
           }
         }
       }
+      wb: file(relativePath: { eq: "wb.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       }
   `)
   return (
     <section className="works" id="work">
       <h2 className="title">WORK</h2>
       <div className="works__list">
+        <Fade>
+          <div className="works__item">
+            <a href="https://www.workbriefly.com/" target="_blank" rel="noopener noreferrer"><h3 className="works__title">WorkBriefly</h3></a>
+            <p className="works__desc">A temporary work platform (Front-end)</p>
+            <a className="works__img" href="https://www.workbriefly.com/" target="_blank" rel="noopener noreferrer"><Img fluid={data.wb.childImageSharp.fluid} /></a>
+            <ul className="works__skill">
+              <li>React</li>
+              <li>Firebase</li>
+              <li>Emotion</li>
+            </ul>
+          </div>
+        </Fade>
         <Fade>
           <div className="works__item">
             <a href="https://mayu-i.github.io/React-unsplash-gallery/#/SnapScout/mountain" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Unsplash Gallery</h3></a>
@@ -101,7 +120,7 @@ const Works = () => {
         <Fade>
           <div className="works__item">
             <a href="https://signalog.org/" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Signalog</h3></a>
-            <p className="works__desc">My personal blog built with Gatsby.js.</p>
+            <p className="works__desc">My personal blog</p>
             <a className="works__img" href="https://signalog.org/" target="_blank" rel="noopener noreferrer"><Img fluid={data.signalog.childImageSharp.fluid} /></a>
             <ul className="works__skill">
               <li>Gatsby</li>
