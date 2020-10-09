@@ -117,7 +117,7 @@ const Works = () => {
             </ul>
           </div>
         </Fade>
-        <Fade>
+        {/* <Fade>
           <div className="works__item">
             <a href="https://signalog.org/" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Signalog</h3></a>
             <p className="works__desc">個人ブログ</p>
@@ -129,7 +129,7 @@ const Works = () => {
               <li>Sass</li>
             </ul>
           </div>
-        </Fade>
+        </Fade> */}
         <Fade>
           <div className="works__item">
             <a href="https://mayu-i.github.io/React-emoji-search/" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Emoji Search</h3></a>
