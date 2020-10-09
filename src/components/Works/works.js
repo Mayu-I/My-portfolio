@@ -85,19 +85,19 @@ const Works = () => {
         <Fade>
           <div className="works__item">
             <a href="https://www.workbriefly.com/" target="_blank" rel="noopener noreferrer"><h3 className="works__title">WorkBriefly</h3></a>
-            <p className="works__desc">A temporary work platform (Front-end)</p>
+            <p className="works__desc">短期バイトの求人プラットフォーム (フロントエンド)</p>
             <a className="works__img" href="https://www.workbriefly.com/" target="_blank" rel="noopener noreferrer"><Img fluid={data.wb.childImageSharp.fluid} /></a>
             <ul className="works__skill">
               <li>React</li>
               <li>Firebase</li>
-              <li>Emotion</li>
+              <li>Node.js</li>
             </ul>
           </div>
         </Fade>
         <Fade>
           <div className="works__item">
             <a href="https://mayu-i.github.io/React-unsplash-gallery/#/SnapScout/mountain" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Unsplash Gallery</h3></a>
-            <p className="works__desc">Photo search with Unsplash API</p>
+            <p className="works__desc">Unsplash APIを使った写真検索サービス</p>
             <a className="works__img" href="https://mayu-i.github.io/React-unsplash-gallery/#/SnapScout/mountain" target="_blank" rel="noopener noreferrer"><Img fluid={data.gallery.childImageSharp.fluid} /></a>
             <ul className="works__skill">
               <li>React</li>
@@ -109,7 +109,7 @@ const Works = () => {
         <Fade>
           <div className="works__item">
             <a href="https://mayu-i.github.io/React-image-compressor/" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Image Compressor</h3></a>
-            <p className="works__desc">An offline image compressor built with React and browser-image-compression</p>
+            <p className="works__desc">画像圧縮アプリ</p>
             <a className="works__img" href="https://mayu-i.github.io/React-image-compressor/" target="_blank" rel="noopener noreferrer"><Img fluid={data.compressor.childImageSharp.fluid} /></a>
             <ul className="works__skill">
               <li>React</li>
@@ -120,7 +120,7 @@ const Works = () => {
         <Fade>
           <div className="works__item">
             <a href="https://signalog.org/" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Signalog</h3></a>
-            <p className="works__desc">My personal blog</p>
+            <p className="works__desc">個人ブログ</p>
             <a className="works__img" href="https://signalog.org/" target="_blank" rel="noopener noreferrer"><Img fluid={data.signalog.childImageSharp.fluid} /></a>
             <ul className="works__skill">
               <li>Gatsby</li>
@@ -133,7 +133,7 @@ const Works = () => {
         <Fade>
           <div className="works__item">
             <a href="https://mayu-i.github.io/React-emoji-search/" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Emoji Search</h3></a>
-            <p className="works__desc">React app for searching Emoji</p>
+            <p className="works__desc">絵文字検索アプリ</p>
             <a className="works__img" href="https://mayu-i.github.io/React-emoji-search/" target="_blank" rel="noopener noreferrer"><Img fluid={data.emoji.childImageSharp.fluid} /></a>
             <ul className="works__skill">
               <li>React</li>
@@ -145,7 +145,7 @@ const Works = () => {
         <Fade>
           <div className="works__item">
             <a href="https://github.com/Mayu-I/Inhabitent-site" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Inhabitent</h3></a>
-            <p className="works__desc">Wordpress custom theme built for a camping company.</p>
+            <p className="works__desc">キャンプ用品会社のためのWordPressテーマ</p>
             <a className="works__img" href="https://github.com/Mayu-I/Inhabitent-site" target="_blank" rel="noopener noreferrer"><Img fluid={data.inhabitent.childImageSharp.fluid} /></a>
             <ul className="works__skill">
               <li>Wordpress</li>
@@ -158,7 +158,7 @@ const Works = () => {
         <Fade>
           <div className="works__item">
             <a href="https://mayu-i.github.io/Instanews-app/" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Insta News</h3></a>
-            <p className="works__desc">New York Times News API front-end</p>
+            <p className="works__desc">New York Times News APIを使ったサイト</p>
             <a className="works__img" href="https://mayu-i.github.io/Instanews-app/" target="_blank" rel="noopener noreferrer"><Img fluid={data.instanews.childImageSharp.fluid} /></a>
             <ul className="works__skill">
               <li>Javascript</li>
@@ -171,7 +171,7 @@ const Works = () => {
         <Fade>
           <div className="works__item">
             <a href="https://github.com/Mayu-I/Quotes-on-dev" target="_blank" rel="noopener noreferrer"><h3 className="works__title">Quotes on Dev</h3></a>
-            <p className="works__desc">A website called Quotes on Dev using the WordPress REST API.</p>
+            <p className="works__desc">WordPress REST APIを使ったDev名言集サイト</p>
             <a className="works__img" href="https://github.com/Mayu-I/Quotes-on-dev" target="_blank" rel="noopener noreferrer"><Img fluid={data.quotesondev.childImageSharp.fluid} /></a>
             <ul className="works__skill">
               <li>Wordpress</li>

@@ -36,7 +36,7 @@ const Header = () => {
           <a href="#about">About</a>
           <a href="#work">Work</a>
           <a href="#contact">Contact</a>
-          <a href="https://drive.google.com/file/d/1l1567vc94Nk1csTIedKpH-it__ikEBtn/view?usp=sharing">Resume</a>
+          {/* <a href="https://drive.google.com/file/d/1l1567vc94Nk1csTIedKpH-it__ikEBtn/view?usp=sharing">Resume</a> */}
         </div>
         {/* <Burger /> */}
       </div>
@@ -53,7 +53,7 @@ const Header = () => {
               <span data-content="U">U</span>
             </span>
           </h2>
-          <p className="header__text">a web developer based in Vancouver</p>
+          <p className="header__text">a web developer based in Tokyo</p>
         </div>
       </div>
     </header >

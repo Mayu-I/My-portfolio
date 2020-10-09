@@ -1,173 +1,173 @@
-.header{
-    margin-top: 20px;
-    position: relative;
-    &__wrapper{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+.header {
+  margin-top: 20px;
+  position: relative;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    height: 80px;
+    width: 950px;
+    @include pc {
+      top: 50px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    @include tb {
+      width: 85vw;
+    }
+    @include sp {
+      width: 100%;
+      position: relative;
+    }
+  }
+  &__logo {
+    width: 30px;
+    @include sp {
+      width: 20px;
+    }
+    a {
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 1.5px;
+      color: $black;
+    }
+  }
+  &__nav {
+    padding-right: 10px;
+    @include pc {
+      // width: 350px;
+    }
+    a {
+      margin: 0 10px;
+      text-decoration: none;
+      letter-spacing: $spacing;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      color: $black;
+      position: relative;
+      padding-bottom: 8px;
+      @include sp {
+        font-size: 1.2rem;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &:before,
+      &:after {
+        content: "";
         position: absolute;
-        height: 80px;
-        width: 950px;
-        @include pc{
-          top: 50px;
-          left: 50%;
-          transform:translate(-50%, -50%);
+        bottom: 2px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: $black;
+      }
+      &:before {
+        opacity: 0;
+        transform: translateY(-$distance);
+        transition: transform 0s $easeOutBack, opacity 0s;
+      }
+      &:after {
+        opacity: 0;
+        transform: translateY($distance/2);
+        transition: transform $duration $easeOutBack, opacity $duration;
+      }
+      &:hover,
+      &:focus {
+        &:before,
+        &:after {
+          opacity: 1;
+          transform: translateY(0);
         }
-        @include tb{
-          width: 85vw;
+        &:before {
+          transition: transform $duration $easeOutBack, opacity $duration;
         }
-        @include sp{
-          width: 100%;
-          position: relative;
+        &:after {
+          transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
         }
-    }
-    &__logo{
-        width:30px;
-        @include sp{
-        width: 20px;
-        }
-        a{
-            font-weight: 700;
-            text-decoration: none;
-            letter-spacing: 1.5px;
-            color: $black;
-        }
-    }
-    &__nav{
-        padding-right: 10px;
-        @include pc{
-        width: 350px;
-        }
-        a{
-            margin: 0 10px;
-            text-decoration: none;
-            letter-spacing: $spacing;
-            text-transform: uppercase;
-            font-size: 1.3rem;
-            color: $black;
-            position: relative;
-            padding-bottom: 8px;
-            @include sp{
-              font-size: 1.2rem;
-            }
-            &:last-child{
-                margin-right: 0;
-            }
-            &:before,
-            &:after{
-              content: '';
-              position: absolute;
-              bottom: 2px;
-              left: 0;
-              right: 0;
-              height: 2px;
-              background-color: $black;
-            }
-            &:before{
-              opacity: 0;
-              transform: translateY(-$distance);
-              transition: transform 0s $easeOutBack, opacity 0s;
-            }
-            &:after{
-              opacity: 0;
-              transform: translateY($distance/2);
-              transition: transform $duration $easeOutBack, opacity $duration;
-            }
-            &:hover,
-            &:focus{
-              &:before,
-              &:after{
-                opacity: 1;
-                transform: translateY(0);
-              }
-              &:before{
-                transition: transform $duration $easeOutBack, opacity $duration;
-              }
-              &:after{
-                transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
-              }
-            }
-        }
-    }
-    &__desc{
-        display: flex;
-        text-align: center;
-        align-items: center;
-        height: 100vh;
-        justify-content: space-between;
-        @include tb{
-          height: 100vh;
-        }
-        @include sp{
-          height: 80vh;
-          flex-direction: column-reverse;
-          justify-content: center;
-        }
-        h2{
-            font-size: 2.8rem;
-            letter-spacing: $spacing;
-            @include sp{
-              font-size: 2.5rem;
-            }
-        }
-        p{
-            font-size: 1.5rem;
-            margin-top: 30px;
-            text-decoration: underline; 
-            animation: down 1s ease 1.2s forwards;
-            opacity: 0;  
-            position: relative;
-            @include sp{
-              font-size: 1.4rem;
-            }
-        }
-    }
-    &__intro{
-      width: 350px;
-    }
-    &__baby{
-      width: 325px;
-      @include sp{
-        margin-top: 30px;
-        width: 200px;
       }
     }
-    &__name{
-      padding-left: 7px;
-      span{
-        position: relative;
+  }
+  &__desc {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
+    @include tb {
+      height: 100vh;
+    }
+    @include sp {
+      height: 80vh;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    h2 {
+      font-size: 2.8rem;
+      letter-spacing: $spacing;
+      @include sp {
+        font-size: 2.5rem;
+      }
+    }
+    p {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      text-decoration: underline;
+      animation: down 1s ease 1.2s forwards;
+      opacity: 0;
+      position: relative;
+      @include sp {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  &__intro {
+    width: 350px;
+  }
+  &__baby {
+    width: 325px;
+    @include sp {
+      margin-top: 30px;
+      width: 200px;
+    }
+  }
+  &__name {
+    padding-left: 7px;
+    span {
+      position: relative;
+      color: transparent;
+      &::before {
+        content: attr(data-content);
+        opacity: 0;
+        position: absolute;
+        top: -30px;
         color: transparent;
-        &::before{
-          content:attr(data-content);
-          opacity: 0;
-          position: absolute;
-          top: -30px;
-          color: transparent;
-          text-shadow: none;
-          transition: 0.6s ease;
-          animation: falls 1s ease forwards;
-          color: $black;
-                }
-        &:nth-of-type(1){
-          &::before{
-            animation: falls 0.7s ease 0.4s forwards;
-          }
+        text-shadow: none;
+        transition: 0.6s ease;
+        animation: falls 1s ease forwards;
+        color: $black;
+      }
+      &:nth-of-type(1) {
+        &::before {
+          animation: falls 0.7s ease 0.4s forwards;
         }
-        &:nth-of-type(2){
-          &::before{
-            animation: falls 0.8s ease 0.5s forwards;
-          }
+      }
+      &:nth-of-type(2) {
+        &::before {
+          animation: falls 0.8s ease 0.5s forwards;
         }
-        &:nth-of-type(3){
-          &::before{
-            animation: falls 0.9s ease 0.6s forwards;
-          }
+      }
+      &:nth-of-type(3) {
+        &::before {
+          animation: falls 0.9s ease 0.6s forwards;
         }
-        &:nth-of-type(4){
-          &::before{
-            animation: falls 1.0s ease 0.7s forwards;
-          }
+      }
+      &:nth-of-type(4) {
+        &::before {
+          animation: falls 1s ease 0.7s forwards;
         }
       }
     }
+  }
 }
